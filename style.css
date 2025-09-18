@@ -1,0 +1,27 @@
+html {
+    --text: #08080c;
+    --background: #f9f8f8;
+    --primary: #2ab201;
+    --secondary: #1f2c3b;
+    --accent: #3fb80f;
+}
+
+body {
+    color: var(--text);
+    background: var(--background);
+}
+
+h1 {
+    color: var(--primary)
+}
+
+img {
+    padding: 2px;
+    border-radius: 15px;
+    border: 4px groove var(--accent);
+    background: var(--secondary);
+}
+
+audio {
+    background: var(--text);
+}
