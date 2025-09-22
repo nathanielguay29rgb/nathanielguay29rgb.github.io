@@ -9,10 +9,22 @@ html {
 body {
     color: var(--text);
     background: var(--background);
+    font-family: "Montserrat"
+}
+
+li::marker {
+    color: var(--accent);
 }
 
 h1 {
-    color: var(--primary)
+    color: var(--secondary);
+    font-family: "Righteous";
+}
+
+h2,
+h3 {
+    color: var(--primary);
+    font-family: "Righteous";
 }
 
 img {
