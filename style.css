@@ -14,17 +14,38 @@ body {
 
 li::marker {
     color: var(--accent);
+    font-size: 1.3rem;
+    font-stretch: expanded;
+    font-style: oblique;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 h1 {
     color: var(--secondary);
     font-family: "Righteous";
+    font-weight: 800;
+    font-stretch: condensed;
+    font-style: oblique;
+    font-size: xx-large;
+    text-decoration: underline;
 }
 
 h2,
 h3 {
     color: var(--primary);
     font-family: "Righteous";
+    font-weight: 1000;
+    line-height: 110%;
+}
+
+h2 {
+    text-decoration: wavy underline;
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline dotted;
 }
 
 img {
