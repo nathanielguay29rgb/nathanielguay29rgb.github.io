@@ -6,6 +6,9 @@ html {
     --accent: #3fb80f;
 }
 
+* {
+    /* border: 1px solid red; */
+}
 body {
     color: var(--text);
     background: var(--background);
@@ -29,6 +32,7 @@ h1 {
     font-style: oblique;
     font-size: xx-large;
     text-decoration: underline;
+    height: 10%;
 }
 
 h2,
@@ -53,8 +57,18 @@ img {
     border-radius: 15px;
     border: 4px groove var(--accent);
     background: var(--secondary);
+    margin: 1em
+}
+
+li {
+    border: 1px groove var(--accent);
+    width: 500px;
 }
 
 audio {
     background: var(--text);
+    margin-bottom: 20px;
+    margin-left: 30px;  
+    padding: 5px;
 }
+
