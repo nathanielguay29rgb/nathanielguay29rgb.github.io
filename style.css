@@ -1,14 +1,15 @@
 html {
     --text: #08080c;
     --background: #f9f8f8;
-    --primary: #2ab201;
+    --primary: #208901;
     --secondary: #1f2c3b;
-    --accent: #3fb80f;
+    --accent: #226407;
 }
 
 * {
     /* border: 1px solid red; */
 }
+
 body {
     color: var(--text);
     background: var(--background);
@@ -39,7 +40,7 @@ h2,
 h3 {
     color: var(--primary);
     font-family: "Righteous";
-    font-weight: 1000;
+    font-weight: 100;
     line-height: 110%;
 }
 
@@ -68,7 +69,6 @@ li {
 audio {
     background: var(--text);
     margin-bottom: 20px;
-    margin-left: 30px;  
+    margin-left: 30px;
     padding: 5px;
 }
-
