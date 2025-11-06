@@ -7,9 +7,6 @@
 </head>
 <body>
     <p>🎈</p>
-
-<script>
-  <p>This page turns violet when you hold the V key.</p>
 <script>
   let size = 10;
   const p = document.querySelector("p");
@@ -19,11 +16,13 @@
       document.body.style.background = "violet";
       size += 5;
       p.style.fontSize = size + "px";
+      //inflate
     }
     if (event.key == "ArrowDown") {
       document.body.style.background = "red";
       size -= 5;
       p.style.fontSize = size + "px";
+      //deflate
     }
     if (size > 40) {
       p.innerText = "BOOM!"
@@ -38,7 +37,6 @@
       document.body.style.background = "";
   }
   window.addEventListener("keyup", handleKeyUp);
-</script>
 </script>
 </body>
 </html>
