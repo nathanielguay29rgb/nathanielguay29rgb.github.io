@@ -115,15 +115,17 @@
         // TODO: Find which radio button is checked and display it.
         // Challenge: Include whether the user subscribed or not.
       let lightMode = document.getElementById("lightMode");
-      if (lightMode.checked){
+      if (lightMode.checked) {
         
       
       let darkMode = document.getElementById("darkMode");
-      if(darkMode.checked){
+      if(darkMode.checked) {
+
       
      let systemMode = document.getElementById("systemMode");
-     if(systemMode.checked){
-
+     if(systemMode.checked) {
+      modeOutput.textContent = "Selected: System Mode";
+        }
       });
     </script>
   </body>
