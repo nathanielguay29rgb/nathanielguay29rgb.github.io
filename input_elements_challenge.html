@@ -116,16 +116,18 @@
         // Challenge: Include whether the user subscribed or not.
       let lightMode = document.getElementById("lightMode");
       if (lightMode.checked) {
-        
+      modeOutput.textContent = "Selected: Light Mode";
+      } 
       
       let darkMode = document.getElementById("darkMode");
       if(darkMode.checked) {
-
+      modeOutput.textContent = "Selected: Dark Mode";
+      }
       
      let systemMode = document.getElementById("systemMode");
      if(systemMode.checked) {
-      modeOutput.textContent = "Selected: System Mode";
-        }
+     modeOutput.textContent = "Selected: System Mode";
+      }
       });
     </script>
   </body>
