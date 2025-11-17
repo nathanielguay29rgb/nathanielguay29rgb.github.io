@@ -72,6 +72,7 @@
       <label><input type="radio" name="mode" id="darkMode" value="Dark" /> Dark</label>
       <label
         ><input type="radio" name="mode" id="systemMode" value="System" checked /> System</label
+      <label><input type="check" name="mode" id="subscribeMode" value="Subscribe to newsletter" checked /> Subscribe to newsletter/label>
       >
       <button id="btnSubmit">Submit</button>
       <div class="output" id="modeOutput"></div>
@@ -114,6 +115,8 @@
       btnSubmit.addEventListener("click", () => {
         // TODO: Find which radio button is checked and display it.
         // Challenge: Include whether the user subscribed or not.
+
+      let 
       let lightMode = document.getElementById("lightMode");
       if (lightMode.checked) {
       modeOutput.textContent = "Selected: Light Mode";
