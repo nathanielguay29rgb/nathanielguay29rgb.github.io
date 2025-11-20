@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <p>Question #1: What is the discriminant found by?</p>
+      <label
+        ><input type="radio" name="mode" id="lightMode" value="lightMode" />
+        b-3</label
+      >
+      <label
+        ><input type="radio" name="mode" id="darkMode" value="darkMode" />
+        b^2-4ac</label
+      >
+      <label>
+        <input type="radio" name="mode" id="systemMode" value="systemMode" checked/>
+        a+2
+      </label>
+      <button id="btnSubmit1">Submit</button>
+      <div class="output" id="modeOutput"></div>
+    </section>
+              <p>Question #2: What is 3x+2x-3z</p>
+      <label
+        ><input type="radio" name="mode2" id="lightMode2" value="Light" />
+        5x-3z</label
+      >
+      <label
+        ><input type="radio" name="mode2" id="darkMode2" value="Dark" />
+        2y</label
+      >
+      <label
+        ><input type="radio" name="mode2" id="systemMode2" value="System" checked/>
+        5x+4z</label
+        >
+      <button id="btnSubmit2">Submit</button>
+      <div class="output" id="modeOutput2"></div>
+    </section>
+    <p>Question #3: What course comes after geometry?</p>
+      <label
+        ><input type="radio" name="mode3" id="lightMode3" value="Light" />
+        Algebra 1</label
+      >
+      <label
+        ><input type="radio" name="mode3" id="darkMode3" value="Dark" />
+        Algebra 2</label
+      >
+      <label
+        ><input type="radio" name="mode3" id="systemMode3" value="System" checked/>
+        Precalculus</label
+        >
+      <button id="btnSubmit3">Submit</button>
+      <div class="output" id="modeOutput3"></div>
+    </section>
+    <script>
+      
+    const btnSubmit1 = document.getElementById("btnSubmit1");
+    const modeOutput = document.getElementById("modeOutput");
+    
+    btnSubmit1.addEventListener("click", () => {
+    let lightMode = document.getElementById("lightMode");
+        if (lightMode.checked) {
+          modeOutput.textContent = "Selected: Incorrect ";
+        }
+
+        let darkMode = document.getElementById("darkMode");
+        if (darkMode.checked) {
+          modeOutput.textContent = "Selected: Correct!";
+        }
+
+        let systemMode = document.getElementById("systemMode");
+        if (systemMode.checked) {
+          modeOutput.textContent = "Selected: Incorrect";
+        }
+      });
+    
+    const btnSubmit2 = document.getElementById("btnSubmit2");
+    const modeOutput2 = document.getElementById("modeOutput2");
+    
+    btnSubmit2.addEventListener("click", () => {
+    let lightMode = document.getElementById("lightMode");
+        if (lightMode.checked) {
+          modeOutput2.textContent = "Selected: Correct! ";
+        }
+
+        let darkMode = document.getElementById("darkMode");
+        if (darkMode.checked) {
+          modeOutput2.textContent = "Selected: Incorrect";
+        }
+
+        let systemMode = document.getElementById("systemMode");
+        if (systemMode.checked) {
+          modeOutput2.textContent = "Selected: Incorrect";
+        }
+      });
+
+    const btnSubmit3 = document.getElementById("btnSubmit3");
+    const modeOutput3 = document.getElementById("modeOutput3");
+    
+    btnSubmit3.addEventListener("click", () => {
+    let lightMode = document.getElementById("lightMode");
+        if (lightMode.checked) {
+          modeOutput3.textContent = "Selected: Correct! ";
+        }
+
+        let darkMode = document.getElementById("darkMode");
+        if (darkMode.checked) {
+          modeOutput3.textContent = "Selected: Incorrect";
+        }
+
+        let systemMode = document.getElementById("systemMode");
+        if (systemMode.checked) {
+          modeOutput3.textContent = "Selected: Incorrect";
+        }
+      });
+
+    </script>
+</body>
+</html>
