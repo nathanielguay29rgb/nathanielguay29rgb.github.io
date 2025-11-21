@@ -80,18 +80,18 @@
     const modeOutput2 = document.getElementById("modeOutput2");
     
     btnSubmit2.addEventListener("click", () => {
-    let lightMode = document.getElementById("lightMode");
-        if (lightMode.checked) {
+    let lightMode = document.getElementById("lightMode2");
+        if (lightMode2.checked) {
           modeOutput2.textContent = "Selected: Correct! ";
         }
 
-        let darkMode = document.getElementById("darkMode");
-        if (darkMode.checked) {
+        let darkMode = document.getElementById("darkMode2");
+        if (darkMode2.checked) {
           modeOutput2.textContent = "Selected: Incorrect";
         }
 
-        let systemMode = document.getElementById("systemMode");
-        if (systemMode.checked) {
+        let systemMode = document.getElementById("systemMode2");
+        if (systemMode2.checked) {
           modeOutput2.textContent = "Selected: Incorrect";
         }
       });
@@ -100,22 +100,30 @@
     const modeOutput3 = document.getElementById("modeOutput3");
     
     btnSubmit3.addEventListener("click", () => {
-    let lightMode = document.getElementById("lightMode");
-        if (lightMode.checked) {
-          modeOutput3.textContent = "Selected: Correct! ";
-        }
-
-        let darkMode = document.getElementById("darkMode");
-        if (darkMode.checked) {
+    let lightMode = document.getElementById("lightMode3");
+        if (lightMode3.checked) {
           modeOutput3.textContent = "Selected: Incorrect";
         }
 
-        let systemMode = document.getElementById("systemMode");
-        if (systemMode.checked) {
+        let darkMode = document.getElementById("darkMode3");
+        if (darkMode3.checked) {
+          modeOutput3.textContent = "Selected: Correct!";
+        }
+
+        let systemMode = document.getElementById("systemMode3");
+        if (systemMode3.checked) {
           modeOutput3.textContent = "Selected: Incorrect";
         }
       });
-
+    <p>You have found the secret button!<script>
+  let size = 10;
+  const p = document.querySelector("p");
+  p.style.fontSize = size + "px";
+  function handleKeyDown (event){
+    if (event.key == "ArrowUp") {
+      document.body.style.background = "violet";
+      size += 5;
+      p.style.fontSize = size + "px";
     </script>
 </body>
 </html>
