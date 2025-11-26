@@ -19,7 +19,7 @@
         <input type="radio" name="mode" id="systemMode" value="systemMode" checked/>
         a+2
       </label>
-      <button id="btnSubmit1">Submit</button>
+      <button id="btnSubmit">Submit</button>
       <div class="output" id="modeOutput"></div>
     </section>
               <p>Question #2: What is 3x+2x-3z</p>
@@ -56,10 +56,10 @@
     </section>
     <script>
       
-    const btnSubmit1 = document.getElementById("btnSubmit1");
+    const btnSubmit = document.getElementById("btnSubmit");
     const modeOutput = document.getElementById("modeOutput");
     
-    btnSubmit1.addEventListener("click", () => {
+    btnSubmit.addEventListener("click", () => {
     let lightMode = document.getElementById("lightMode");
         if (lightMode.checked) {
           modeOutput.textContent = "Selected: Incorrect ";
@@ -75,6 +75,8 @@
           modeOutput.textContent = "Selected: Incorrect";
         }
       });
+      </script>
+      <script>
     
     const btnSubmit2 = document.getElementById("btnSubmit2");
     const modeOutput2 = document.getElementById("modeOutput2");
@@ -95,6 +97,8 @@
           modeOutput2.textContent = "Selected: Incorrect";
         }
       });
+      </script>
+      <script>
 
     const btnSubmit3 = document.getElementById("btnSubmit3");
     const modeOutput3 = document.getElementById("modeOutput3");
@@ -115,15 +119,4 @@
           modeOutput3.textContent = "Selected: Incorrect";
         }
       });
-    <p>You have found the secret button!<script>
-  let size = 10;
-  const p = document.querySelector("p");
-  p.style.fontSize = size + "px";
-  function handleKeyDown (event){
-    if (event.key == "ArrowUp") {
-      document.body.style.background = "violet";
-      size += 5;
-      p.style.fontSize = size + "px";
-    </script>
-</body>
-</html>
+      </script>
