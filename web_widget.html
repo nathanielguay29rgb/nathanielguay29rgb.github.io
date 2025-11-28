@@ -54,6 +54,7 @@
       <button id="btnSubmit3">Submit</button>
       <div class="output" id="modeOutput3"></div>
     </section>
+  <button id="resetBtn">Reset</button>
     <script>
       
     const btnSubmit = document.getElementById("btnSubmit");
@@ -62,17 +63,17 @@
     btnSubmit.addEventListener("click", () => {
     let lightMode = document.getElementById("lightMode");
         if (lightMode.checked) {
-          modeOutput.textContent = "Selected: Incorrect ";
+          modeOutput.textContent = "Incorrect ";
         }
 
         let darkMode = document.getElementById("darkMode");
         if (darkMode.checked) {
-          modeOutput.textContent = "Selected: Correct!";
+          modeOutput.textContent = "Correct!";
         }
 
         let systemMode = document.getElementById("systemMode");
         if (systemMode.checked) {
-          modeOutput.textContent = "Selected: Incorrect";
+          modeOutput.textContent = "Incorrect";
         }
       });
       </script>
@@ -84,17 +85,17 @@
     btnSubmit2.addEventListener("click", () => {
     let lightMode = document.getElementById("lightMode2");
         if (lightMode2.checked) {
-          modeOutput2.textContent = "Selected: Correct! ";
+          modeOutput2.textContent = "Correct! ";
         }
 
         let darkMode = document.getElementById("darkMode2");
         if (darkMode2.checked) {
-          modeOutput2.textContent = "Selected: Incorrect";
+          modeOutput2.textContent = "Incorrect";
         }
 
         let systemMode = document.getElementById("systemMode2");
         if (systemMode2.checked) {
-          modeOutput2.textContent = "Selected: Incorrect";
+          modeOutput2.textContent = "Incorrect";
         }
       });
       </script>
@@ -106,17 +107,34 @@
     btnSubmit3.addEventListener("click", () => {
     let lightMode = document.getElementById("lightMode3");
         if (lightMode3.checked) {
-          modeOutput3.textContent = "Selected: Incorrect";
+          modeOutput3.textContent = "Incorrect";
         }
 
         let darkMode = document.getElementById("darkMode3");
         if (darkMode3.checked) {
-          modeOutput3.textContent = "Selected: Correct!";
+          modeOutput3.textContent = "Correct!";
         }
 
         let systemMode = document.getElementById("systemMode3");
         if (systemMode3.checked) {
-          modeOutput3.textContent = "Selected: Incorrect";
+          modeOutput3.textContent = "Incorrect";
         }
       });
       </script>
+      <script>
+      resetBtn.onclick = () => location.reload();
+    </script>
+     <p id="answerKey" style="font-size:10px;">Answer Key (press up arrow to make bigger): Q1: b^2-4ac, Q2: 5x-3z, Q3: Algebra 2</p>
+    <script>
+        let size = 1;
+        const answerKey = document.getElementById("answerKey");
+        window.addEventListener("keydown", function(e) {
+            if (e.key === "ArrowUp") {
+                size += 5;
+                answerKey.style.fontSize = size + "px";
+            }
+        });
+    </script>
+</body>
+</html>
+    
