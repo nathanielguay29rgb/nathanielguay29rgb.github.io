@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webwidget Math Quiz</title>
 </head>
 <body>
-          <p>Question #1: What is the discriminant found by?</p>
+      <h1>The Ultimate Math Quiz</h1>
+      <p>Question #1: What is the discriminant found by?</p>
       <label
         ><input type="radio" name="mode" id="lightMode" value="lightMode" />
         b-3</label
@@ -124,13 +125,14 @@
       <script>
       resetBtn.onclick = () => location.reload();
     </script>
-     <p id="answerKey" style="font-size:10px;">Answer Key (press up arrow to make bigger): Q1: b^2-4ac, Q2: 5x-3z, Q3: Algebra 2</p>
+    <h2>Answer Key (Press the "up arrow" to reveal)</h2>
+     <p id="answerKey" style="font-size:0px;">Q1: b^2-4ac, Q2: 5x-3z, Q3: Algebra 2</p>
     <script>
         let size = 1;
         const answerKey = document.getElementById("answerKey");
         window.addEventListener("keydown", function(e) {
             if (e.key === "ArrowUp") {
-                size += 5;
+                size += 10;
                 answerKey.style.fontSize = size + "px";
             }
         });
